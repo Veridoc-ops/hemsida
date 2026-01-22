@@ -48,22 +48,35 @@
             align-items:center;
             text-align:center;
             gap:0.3rem;
-        }
-        .logo {
-            font-weight:700;
-            font-size:1.2rem;
-            letter-spacing:0.14em;
-            text-transform:uppercase;
-            line-height:1.2;
-        }
-        .logo span { color: var(--accent); }
-        .logo-sub {
-            font-size:0.85rem;
-            text-transform:uppercase;
-            letter-spacing:0.18em;
-            color: var(--accent);
-            margin-top:0.15rem;
-        }
+ .logo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: lowercase;
+    color: #ffffff; /* vit text */
+    line-height: 1.1;
+}
+
+.logo-location {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: 2rem; /* större font */
+    text-transform: uppercase;
+    color: var(--accent); /* gul text */
+    margin-top: 0.1rem;
+    letter-spacing: 0.15em;
+}
+
+.logo-sub {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    color: #ffffff; /* vit text */
+    margin-top: 0.2rem;
+    letter-spacing: 0.14em;
+}
+
         .logo-sub-extra {
             font-size:0.75rem;
             letter-spacing:0.12em;
@@ -156,9 +169,18 @@
 <body>
 <header>
     <div class="nav-inner">
-        <div class="logo">Golden Heights </div>
-        <span>SVENSHÖGEN</span>
-        <div class="logo-sub">VANDRARHEM – GÄSTHEM – PRIVAT BOENDE</div>
+        <!-- Logo med tre nivåer -->
+        <div class="logo">
+            Golden Heights
+        </div>
+        <div class="logo-location">
+            SVENSHÖGEN
+        </div>
+        <div class="logo-sub">
+            Vandrarhem – Gästhem – Privat boende
+        </div>
+
+        <!-- Navigation -->
         <nav>
             <ul>
                 <li><a href="#start">Hem</a></li>
@@ -167,9 +189,12 @@
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
+
+        <!-- Call-to-action knapp -->
         <a href="bokning.html" class="btn-primary">Boka / offert ▸</a>
     </div>
 </header>
+
 
 <main>
     <section id="start" class="hero">
