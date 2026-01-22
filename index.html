@@ -21,7 +21,7 @@
             --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.9);
             --max-width: 1020px;
         }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        * { box-sizing: border-box; margin:0; padding:0; }
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             background:
@@ -48,40 +48,32 @@
             align-items:center;
             text-align:center;
             gap:0.3rem;
- .logo {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-weight: 700;
-    font-size: 1.4rem;
-    text-transform: lowercase;
-    color: #ffffff; /* vit text */
-    line-height: 1.1;
-}
-
-.logo-location {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-weight: 700;
-    font-size: 2rem; /* större font */
-    text-transform: uppercase;
-    color: var(--accent); /* gul text */
-    margin-top: 0.1rem;
-    letter-spacing: 0.15em;
-}
-
-.logo-sub {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-weight: 700;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    color: #ffffff; /* vit text */
-    margin-top: 0.2rem;
-    letter-spacing: 0.14em;
-}
-
-        .logo-sub-extra {
-            font-size:0.75rem;
-            letter-spacing:0.12em;
-            color: var(--muted);
+        }
+        /* Logo */
+        .logo {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-weight:700;
+            font-size:1.4rem;
+            text-transform: lowercase;
+            color:#ffffff;
+        }
+        .logo-location {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-weight:700;
+            font-size:2rem;
+            text-transform: uppercase;
+            color: var(--accent);
             margin-top:0.1rem;
+            letter-spacing:0.15em;
+        }
+        .logo-sub {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-weight:700;
+            font-size:0.95rem;
+            text-transform: uppercase;
+            color:#ffffff;
+            margin-top:0.2rem;
+            letter-spacing:0.14em;
         }
         nav ul {
             list-style:none;
@@ -152,7 +144,6 @@
         .card h3 { font-size:1rem; margin-bottom:0.2rem; }
         .card small { color:var(--accent); font-size:0.78rem; text-transform:uppercase; letter-spacing:0.12em; }
         .card p { font-size:0.9rem; color:var(--muted); margin:0.55rem 0 0.7rem; flex:1; }
-        .card-footer { display:flex; justify-content:space-between; align-items:center; font-size:0.8rem; color:var(--muted); }
         .info-strip { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:1.1rem; align-items:stretch; }
         .info-box { background: var(--bg-card); border-radius:var(--radius-lg); border:1px solid var(--border-soft); padding:0.9rem; font-size:0.88rem; color:var(--muted); box-shadow:var(--shadow-soft); }
         .info-box h3 { font-size:0.95rem; margin-bottom:0.45rem; color:var(--text);}
@@ -167,20 +158,13 @@
     </style>
 </head>
 <body>
+
 <header>
     <div class="nav-inner">
-        <!-- Logo med tre nivåer -->
-        <div class="logo">
-            Golden Heights
-        </div>
-        <div class="logo-location">
-            SVENSHÖGEN
-        </div>
-        <div class="logo-sub">
-            Vandrarhem – Gästhem – Privat boende
-        </div>
+        <div class="logo">Golden Heights</div>
+        <div class="logo-location">SVENSHÖGEN</div>
+        <div class="logo-sub">Vandrarhem – Gästhem – Privat boende</div>
 
-        <!-- Navigation -->
         <nav>
             <ul>
                 <li><a href="#start">Hem</a></li>
@@ -189,12 +173,9 @@
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
-
-        <!-- Call-to-action knapp -->
         <a href="bokning.html" class="btn-primary">Boka / offert ▸</a>
     </div>
 </header>
-
 
 <main>
     <section id="start" class="hero">
